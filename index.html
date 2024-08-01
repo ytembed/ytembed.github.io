@@ -1,5 +1,5 @@
 <script>
-    try {
+    // try {
         const currentParams = new URLSearchParams(window.location.search)
         const ytParsedLink = currentParams?.get("link") || "";
         const youtubeParams = new URL(ytParsedLink).searchParams;
@@ -12,8 +12,8 @@
         document.write(`<iframe type="text/html" style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999;"
     src="https://www.youtube.com/embed/${link}?autoplay=1&start=${timecode}"
     frameborder="0" allowfullscreen/>`);
-    }
-    catch {
-        document.write('Usage: https://ytembed.github.io?link=YourLink<br><br>Example: <a href="https://ytembed.github.io?link=https://www.youtube.com/watch?v=xvFZjo5PgG0">https://ytembed.github.io?link=https://www.youtube.com/watch?v=xvFZjo5PgG0</a>')
-    }
+    // }
+    // catch {
+    //     document.write('Usage: https://ytembed.github.io?link=YourLink<br><br>Example: <a href="https://ytembed.github.io?link=https://www.youtube.com/watch?v=xvFZjo5PgG0">https://ytembed.github.io?link=https://www.youtube.com/watch?v=xvFZjo5PgG0</a>')
+    // }
 </script>
